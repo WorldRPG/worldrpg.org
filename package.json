@@ -1,0 +1,20 @@
+{
+  "name": "worldrpg.org",
+  "version": "1.0.0",
+  "description": "> An awesome project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docsify serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorldRPG/worldrpg.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WorldRPG/worldrpg.org/issues"
+  },
+  "homepage": "https://github.com/WorldRPG/worldrpg.org#readme"
+}
