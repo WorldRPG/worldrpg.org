@@ -11,7 +11,7 @@ WorldRPG 的框架下一个 World（世界，可以理解为一组存档数据+�
 * Scene: 意为场景，类似于各种游戏中地点的概念，最为贴切的描述是三国志10的场景的概念。
 * Unit: 意为单位，类似于各个游戏中人物及怪物的可移动的概念，拥有自己的属性（property）以及可以执行某些 Action。
 * Item: 意为道具，可以被 Unit 带有或放置于某个 Scene 的不可移动的概念，拥有自己的属性（property）。
-* Story: 意为
+* Story: 意为故事，被用来描述一段对话或剧情，也可用于实现某些简单交互玩法。类似于文字冒险游戏中的某一段演出。
 
 同时 WorldRPG 具有以下逻辑概念
 * Action: 意为行为，是以 Unit 为执行者，可以对其他 Unit、Item、Scene 产生影响的一次动作，比如就寝，挖掘，钓鱼，饮用。
@@ -52,5 +52,14 @@ WorldRPG 的框架下一个 World（世界，可以理解为一组存档数据+�
     │  │  └─stories
     │  └─zh-Hant
     ├─systems
-    └─webview
+    ├─webview
+    └─module.lua
 ```
+
+一个 mod 的核心文件夹主要有 `data` `systems` `locale`, 以及一个文件 module.lua
+
+* `data`文件夹: 主要用于存放**数据**相关的定义，比如 `actions`, `items`, `scenes`, `stories`, `units`。
+* `systems`文件夹: 用于定义世界中的系统，比如睡眠系统，基础人物系统，天气系统等。
+* `locale`文件夹: 用于存放本地化内容。
+
+接下来我们会介绍如何修改或扩充自己的游戏内容。
